@@ -1,6 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { App } from "./components/App.jsx";
-import "./styles/global.scss";
+import { App } from "./routes/App.jsx";
 
 createRoot(
   document.getElementById("root")

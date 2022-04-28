@@ -6,7 +6,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contenthash].js'
+    filename: '[name].[contenthash].js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -46,9 +47,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-    },
+    historyApiFallback: true,
     compress: true,
     port: 9000,
   },
