@@ -1,4 +1,4 @@
-import { ProductList } from '../containers/ProductList.jsx';
+import { ProductList } from '@containers/ProductList.jsx';
 
 const Home = () => {
 	return (

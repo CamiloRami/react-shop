@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Layout } from '../containers/Layout.jsx';
-import { Home } from '../pages/Home.jsx';
-import { Login } from '../pages/Login.jsx';
-import { PasswordRecovery } from '../pages/PasswordRecovery.jsx';
-import { SendEmail } from '../pages/SendEmail.jsx';
-import { NewPassword } from '../pages/NewPassword.jsx';
-import { MyAccount } from '../pages/MyAccount.jsx';
-import { CreateAccount } from '../pages/CreateAccount.jsx';
-import { Checkout } from '../pages/Checkout.jsx';
-import { Orders } from '../pages/Orders.jsx';
-import { NotFound } from '../pages/NotFound.jsx';
-import '../styles/global.scss';
+import { Layout } from '@containers/Layout.jsx';
+import { Home } from '@pages/Home.jsx';
+import { Login } from '@pages/Login.jsx';
+import { PasswordRecovery } from '@pages/PasswordRecovery.jsx';
+import { SendEmail } from '@pages/SendEmail.jsx';
+import { NewPassword } from '@pages/NewPassword.jsx';
+import { MyAccount } from '@pages/MyAccount.jsx';
+import { CreateAccount } from '@pages/CreateAccount.jsx';
+import { Checkout } from '@pages/Checkout.jsx';
+import { Orders } from '@pages/Orders.jsx';
+import { NotFound } from '@pages/NotFound.jsx';
+import '@styles/global.scss';
 
 const App = () => {
 	return (

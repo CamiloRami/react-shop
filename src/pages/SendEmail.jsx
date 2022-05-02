@@ -1,4 +1,4 @@
-import '../styles/SendEmail.scss';
+import '@styles/SendEmail.scss';
 
 import logoYardSale from '@logos/logo_yard_sale.svg';
 import email from '@icons/email.svg';

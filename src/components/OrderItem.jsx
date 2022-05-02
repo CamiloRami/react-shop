@@ -1,4 +1,4 @@
-import '../styles/OrderItem.scss';
+import '@styles/OrderItem.scss';
 
 import closeIcon from '@icons/icon_close.png';
 

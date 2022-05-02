@@ -1,4 +1,4 @@
-import '../styles/Login.scss';
+import '@styles/Login.scss';
 
 import logoYardSale from '@logos/logo_yard_sale.svg';
 

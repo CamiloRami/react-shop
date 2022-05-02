@@ -1,6 +1,6 @@
-import { OrderItem } from '../components/OrderItem.jsx';
-import { Menu } from '../components/Menu.jsx';
-import '../styles/Checkout.scss';
+import { OrderItem } from '@components/OrderItem.jsx';
+import { Menu } from '@components/Menu.jsx';
+import '@styles/Checkout.scss';
 
 const Checkout = () => {
 	return (

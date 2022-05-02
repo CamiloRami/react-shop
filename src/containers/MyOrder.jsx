@@ -1,5 +1,5 @@
-import { OrderItem } from '../components/OrderItem.jsx';
-import '../styles/MyOrder.scss';
+import { OrderItem } from '@components/OrderItem.jsx';
+import '@styles/MyOrder.scss';
 
 import arrowIcon from '@icons/flechita.svg';
 

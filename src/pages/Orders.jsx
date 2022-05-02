@@ -1,5 +1,5 @@
-import { OrderItem } from '../components/OrderItem.jsx';
-import '../styles/Orders.scss';
+import { OrderItem } from '@components/OrderItem.jsx';
+import '@styles/Orders.scss';
 
 const Orders = () => {
 	return (

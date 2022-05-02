@@ -1,4 +1,4 @@
-import '../styles/Order.scss';
+import '@styles/Order.scss';
 
 import arrowIcon from '@icons/flechita.svg';
 
