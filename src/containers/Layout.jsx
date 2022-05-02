@@ -1,9 +1,12 @@
-const Layout = (props) => {
-  return (
-    <div className="Layout">
-      {props.children}
-    </div>
-  )
+import { Header } from '../components/Header.jsx';
+
+const Layout = ({ children }) => {
+	return (
+		<div className="Layout">
+			<Header />
+			{children}
+		</div>
+	);
 }
 
-export { Layout }
+export { Layout };
