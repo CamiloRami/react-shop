@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles/ProductItem.scss';
+import '@styles/ProductItem.scss';
 
 import btAddToCart from '@icons/bt_add_to_cart.svg'
 
