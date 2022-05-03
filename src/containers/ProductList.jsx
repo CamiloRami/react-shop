@@ -1,23 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useGetProducts } from '@hooks/useGetProducts';
 import { ProductItem } from '@components/ProductItem.jsx';
 import '@styles/ProductList.scss';
 
 const API = 'https://api.escuelajs.co/api/v1/products';
 
 const ProductList = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(async() => {
-    const response = await fetch(API)
-    const data = await response.json()
-    setProducts(data)
-  }, [])
+  const products = useGetProducts(API);
 
 	return (
 		<section className="main-container">
 			<div className="ProductList">
         {products.map(product => (
-          <ProductItem />
+          product.id === 2 ? null : <ProductItem product={product} key={product.id} /> // product.id === 2 does not have a src attribute 
         ))}
 			</div>
 		</section>
