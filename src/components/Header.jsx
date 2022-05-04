@@ -1,17 +1,22 @@
 import { useState, useContext } from 'react';
-import '@styles/Header.scss';
-import { Menu } from '@components/Menu.jsx';
 import { AppContext } from '@context/AppContext';
+import { Menu } from '@components/Menu.jsx';
+import { MyOrder } from '@containers/MyOrder.jsx';
+import '@styles/Header.scss';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [openOrders, setOpenOrders] = useState(false);
   const { state } = useContext(AppContext);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  }
+  const toggleOrders = () => {
+    setOpenOrders(!openOrders);
   }
 
 	return (
@@ -45,13 +50,15 @@ const Header = () => {
 					<li className="navbar-email" onClick={toggleMenu}>
             platzi@example.com
           </li>
-					<li className="navbar-shopping-cart">
+					<li className="navbar-shopping-cart" onClick={toggleOrders}>
 						<img src={shoppingCart} alt="shopping cart" />
-						{state.cart.length ? (<div>{ state.cart.length }</div>) : null}
+						{(state.cart.length > 0 && state.cart.length < 10)  && <div>{ state.cart.length }</div>}
+            {state.cart.length >= 10 && <div>+9</div>}
 					</li>
 				</ul>
 			</div>
       {menuOpen && <Menu />}
+      {openOrders && <MyOrder />}
 		</nav>
 	);
 }
